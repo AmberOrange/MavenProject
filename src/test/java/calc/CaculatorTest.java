@@ -45,6 +45,9 @@ public class CaculatorTest {
 	public void testFac() {
 		assertEquals(24, calc.fac(4));
 	}
+	public void testMod() {
+		assertEquals(3, calc.mod(8, 5));
+	}
 	public void testPowAdd() {
 		assertEquals(729, calc.pow(calc.add(calc.sub(9, 3), 3), calc.div(9, 3)));
 	}
