@@ -50,6 +50,10 @@ public class CaculatorTest {
 		assertEquals(3, calc.mod(8, 5));
 	}
 	@Test
+	public void testModByZero() {
+		assertEquals(0, calc.mod(8, 0));
+	}
+	@Test
 	public void testPowAdd() {
 		assertEquals(729, calc.pow(calc.add(calc.sub(9, 3), 3), calc.div(9, 3)));
 	}
