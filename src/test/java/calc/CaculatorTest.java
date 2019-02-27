@@ -30,6 +30,10 @@ public class CaculatorTest {
 		assertEquals(1, calc.div(2,2));
 	}
 	@Test
+	public void testPow() {
+		assertEquals(729, calc.pow(9,3));
+	}
+	@Test
 	public void testDivByZero() {
 		assertEquals(0, calc.div(3,0));
 	}
@@ -38,20 +42,20 @@ public class CaculatorTest {
 		assertEquals(30, calc.add(calc.mul(5, 5), calc.div(10, 2)));
 	}
 	@Test
-	public void testPow() {
-		assertEquals(27, calc.pow(3,3));
+	public void testFac() {
+		assertEquals(1, calc.fac(0));
+		assertEquals(24, calc.fac(4));
 	}
 	@Test
-	public void testPowOfZero() {
-		assertEquals(1, calc.pow(8,0));
+	public void testMod() {
+		assertEquals(3, calc.mod(8, 5));
 	}
 	@Test
-	public void testPowOfOne() {
-		assertEquals(4, calc.pow(4,1));
+	public void testModByZero() {
+		assertEquals(0, calc.mod(8, 0));
 	}
 	@Test
-	public void testPowIntegration() {
-		assertEquals(22, calc.sub(calc.pow(2, 5), 10));
+	public void testPowAdd() {
+		assertEquals(729, calc.pow(calc.add(calc.sub(9, 3), 3), calc.div(9, 3)));
 	}
-	
 }
