@@ -20,6 +20,8 @@ public class CalculatorMain {
 		return a*b;
 	}
 	public int mod(int a, int b) {
+		if (b == 0)
+			return 0;
 		return a % b;
 	}
 	public int pow(int a, int b) {
