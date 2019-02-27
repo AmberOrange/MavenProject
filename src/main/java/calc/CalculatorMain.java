@@ -19,4 +19,10 @@ public class CalculatorMain {
 	public int mul(int a, int b) {
 		return 0;
 	}
+	public int fac(int a) {
+		if (a < 2)
+			return 1;
+		
+		return fac(a-1) * a;
+	}
 }
