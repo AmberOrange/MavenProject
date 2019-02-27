@@ -37,4 +37,21 @@ public class CaculatorTest {
 	public void testPresedence() {
 		assertEquals(30, calc.add(calc.mul(5, 5), calc.div(10, 2)));
 	}
+	@Test
+	public void testPow() {
+		assertEquals(27, calc.pow(3,3));
+	}
+	@Test
+	public void testPowOfZero() {
+		assertEquals(1, calc.pow(8,0));
+	}
+	@Test
+	public void testPowOfOne() {
+		assertEquals(4, calc.pow(4,1));
+	}
+	@Test
+	public void testPowIntegration() {
+		assertEquals(22, calc.sub(calc.pow(2, 5), 10));
+	}
+	
 }
