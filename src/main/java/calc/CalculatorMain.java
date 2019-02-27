@@ -1,5 +1,5 @@
 package calc;
-
+import java.lang.Math;
 public class CalculatorMain {
 	public CalculatorMain(){
 		
@@ -19,7 +19,12 @@ public class CalculatorMain {
 	public int mul(int a, int b) {
 		return a*b;
 	}
+<<<<<<< HEAD
 	public int mod(int a, int b) {
 		return a % b;
+=======
+	public int pow(int a, int b) {
+		return (int) java.lang.Math.pow(a, b);
+>>>>>>> branch 'master' of https://github.com/AmberOrange/MavenProject
 	}
 }
