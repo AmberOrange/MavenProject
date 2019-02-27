@@ -43,6 +43,7 @@ public class CaculatorTest {
 	}
 	@Test
 	public void testFac() {
+		assertEquals(1, calc.fac(0));
 		assertEquals(24, calc.fac(4));
 	}
 	@Test
