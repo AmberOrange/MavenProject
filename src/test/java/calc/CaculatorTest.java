@@ -42,7 +42,12 @@ public class CaculatorTest {
 		assertEquals(30, calc.add(calc.mul(5, 5), calc.div(10, 2)));
 	}
 	@Test
+<<<<<<< HEAD
 	public void testMod() {
 		assertEquals(3, calc.mod(8, 5));
+=======
+	public void testPowAdd() {
+		assertEquals(729, calc.pow(calc.add(calc.sub(9, 3), 3), calc.div(9, 3)));
+>>>>>>> branch 'master' of https://github.com/AmberOrange/MavenProject
 	}
 }
