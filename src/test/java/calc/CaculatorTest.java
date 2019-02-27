@@ -58,4 +58,12 @@ public class CaculatorTest {
 	public void testPowAdd() {
 		assertEquals(729, calc.pow(calc.add(calc.sub(9, 3), 3), calc.div(9, 3)));
 	}
+	@Test
+	public void testAddFac () {
+		assertEquals(15, calc.add(calc.fac(3), 9));
+	}
+	@Test
+	public void testModSub() {
+		assertEquals(3, calc.mod(calc.add(14, 7), 6));
+	}
 }
