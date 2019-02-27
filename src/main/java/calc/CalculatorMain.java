@@ -1,5 +1,5 @@
 package calc;
-
+import java.lang.Math;
 public class CalculatorMain {
 	public CalculatorMain(){
 		
@@ -8,7 +8,7 @@ public class CalculatorMain {
 		return a+b;
 	}
 	public int sub(int a, int b) {
-		return 0;
+		return a-b;
 	}
 	public int div(int a, int b) {
 		if (b == 0)
@@ -17,7 +17,10 @@ public class CalculatorMain {
 		return a/b;
 	}
 	public int mul(int a, int b) {
-		return 0;
+		return a*b;
+	}
+	public int pow(int a, int b) {
+		return (int) java.lang.Math.pow(a, b);
 	}
 	public int fac(int a) {
 		if (a < 2)

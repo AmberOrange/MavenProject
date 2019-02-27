@@ -30,6 +30,10 @@ public class CaculatorTest {
 		assertEquals(1, calc.div(2,2));
 	}
 	@Test
+	public void testPow() {
+		assertEquals(729, calc.pow(9,3));
+	}
+	@Test
 	public void testDivByZero() {
 		assertEquals(0, calc.div(3,0));
 	}
@@ -40,5 +44,8 @@ public class CaculatorTest {
 	@Test
 	public void testFac() {
 		assertEquals(24, calc.fac(4));
+	}
+	public void testPowAdd() {
+		assertEquals(729, calc.pow(calc.add(calc.sub(9, 3), 3), calc.div(9, 3)));
 	}
 }
