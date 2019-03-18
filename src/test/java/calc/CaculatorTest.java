@@ -7,16 +7,10 @@ import org.junit.Test;
 
 public class CaculatorTest {
 	private static CalculatorMain calc;
-	private static Parser parser;
 	
 	@BeforeClass
 	public static void setup(){
 		calc = new CalculatorMain();
-	}
-	@Test
-	public void testParser() throws Exception
-	{
-		assertEquals(10, parser.ParseThis("6 + 4"));
 	}
 	@Test
 	public void testAdd() {
